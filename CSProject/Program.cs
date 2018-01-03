@@ -62,6 +62,12 @@ namespace CSProject
                 }
             }
 
+            PaySlip ps = new PaySlip(month, year);
+            ps.GeneratePaySlip(myStaff);
+            ps.GenerateSummary(myStaff);
+
+            Console.Read();
         }
     }
+
 }
