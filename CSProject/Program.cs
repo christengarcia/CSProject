@@ -24,6 +24,26 @@ namespace CSProject
                 }
             }
 
+            while (month == 0)
+            {
+                Console.Write("\nPkease enter the month: ");
+
+                try
+                {
+                    month = Convert.ToInt32(Console.ReadLine());
+
+                    if (month < 1 || month > 12)
+                    {
+                        Console.WriteLine("Month must be from 1 to 12. Please try again.");
+                        month = 0;
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message + "Please try again.");
+                }
+            }
+
         }
     }
 }
