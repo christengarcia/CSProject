@@ -107,6 +107,13 @@ namespace CSProject
             TotalPay = BasicPay;
         }
 
-
+        public override string ToString()
+        {
+            return "\nNameOfStaff = " + NameOfStaff + "\nmanagerHourlyRate = "
+                + managerHourlyRate + "\nHoursWorked = " + HoursWorked +
+                "\nBasicPay = " + BasicPay + "\nAllowance = " + Allowance +
+                "\n\nTotalPay = " + TotalPay;
+        }
     }
+
 }
