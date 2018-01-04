@@ -70,4 +70,13 @@ namespace CSProject
         }
     }
 
+    class Staff
+    {
+        private float hourlyRate;
+        private int hWorked;
+
+        public float TotalPay { get; protected set; }
+        public float BasicPay { get; private set;  }
+        public string NameOfStaff { get; private set; }
+    }
 }
