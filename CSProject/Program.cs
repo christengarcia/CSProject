@@ -93,6 +93,11 @@ namespace CSProject
                     hWorked = 0;
             }
         }
+        public Staff(string name, float rate)
+        {
+            NameOfStaff = name;
+            hourlyRate = rate;
+        }
 
     }
 }
