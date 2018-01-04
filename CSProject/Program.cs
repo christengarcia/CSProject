@@ -99,5 +99,14 @@ namespace CSProject
             hourlyRate = rate;
         }
 
+        public virtual void CalculatePay()
+        {
+            Console.WriteLine("Calculating Pay...");
+
+            BasicPay = hWorked * hourlyRate;
+            TotalPay = BasicPay;
+        }
+
+
     }
 }
