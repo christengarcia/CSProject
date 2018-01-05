@@ -124,7 +124,17 @@ namespace CSProject
             string path = "staff.txt";
             string[] separator = { ", ", };
 
+            if (FileReader.Exists(path))
+            {
+                using (StreamReader sr = new StreamReader(path))
+                {
+                    while (!sr.EndOfStream)
+                    {
+                        result = sr.ReadLine().Split(separator, StringSplitOptions.RemoveEmptyEntries);
 
+                    }
+                }
+            }
         }
     }
 }
