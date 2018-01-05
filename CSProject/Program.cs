@@ -115,5 +115,16 @@ namespace CSProject
                 "\n\nTotalPay = " + TotalPay;
         }
     }
+    class FileReader
+    {
+        public List<Staff> ReadFile()
+        {
+            List<Staff> myStaff = new List<Staff>();
+            string[] result = new string[2];
+            string path = "staff.txt";
+            string[] separator = { ", ", };
 
+
+        }
+    }
 }
