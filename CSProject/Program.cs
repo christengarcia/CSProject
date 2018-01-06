@@ -76,7 +76,7 @@ namespace CSProject
         private int hWorked;
 
         public float TotalPay { get; protected set; }
-        public float BasicPay { get; private set;  }
+        public float BasicPay { get; private set; }
         public string NameOfStaff { get; private set; }
 
         public int HoursWorked
@@ -139,13 +139,22 @@ namespace CSProject
                     }
                     sr.Close();
                 }
-                }else
-                {
-                    Console.WriteLine("Error: File does not exist");
-                }
-            return myStaff;
             }
+            else
+            {
+                Console.WriteLine("Error: File does not exist");
+            }
+            return myStaff;
         }
+    }
+
+    class PaySlip
+    {
+        private int month;
+        private int year;
+
+        enum MonthsOfYear { JAN = 1, FEB = 2, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, }
 
     }
+}
 
