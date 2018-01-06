@@ -155,6 +155,13 @@ namespace CSProject
 
         enum MonthsOfYear { JAN = 1, FEB = 2, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, }
 
+        public PaySlip(int payMonth, int payYear)
+        {
+            month = payMonth;
+            year = payYear;
+        }
+
+
     }
 }
 
