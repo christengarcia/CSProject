@@ -216,7 +216,10 @@ namespace CSProject
                      
         }
 
-
+        public override string ToString()
+        {
+            return "month = " + month + "year = " + year;
+        }
     }
 
 }
